@@ -1,0 +1,47 @@
+//color variables
+$color-primary : #e29d48;
+$color-primary-dark: #bd7019;
+
+$color-secondary : rgba(16, 29, 44, 0.938);
+
+$color-grey-light-1 : #f9f7f6;
+$color-grey-light-2 : #aaa;
+
+$color-grey-dark-2 :#6d5d4b;
+$color-grey-dark-1 : #54483a;
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/Nunito-Regular.ttf);
+}
+
+//font variables
+$font-primary : myFont, sans-serif;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;//10px
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows:[header-start] 80vh [header-end feature-start] min-content [feature-end story-start] 40vw [story-end] repeat(3,[box-start] min-content [box-end])[grid-end];
+    grid-template-columns:[sidebar-start] 6vw [sidebar-end full-start] 1fr [center-start] repeat(8,[col-start] minmax(min-content, 14rem)[col-end] )[center-end] 1fr [full-end];
+    
+}

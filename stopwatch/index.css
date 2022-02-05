@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(231, 252, 191);
+}
+.stopwatch{
+    display: grid;
+    height: 97.5vh;
+    justify-content: center;
+    align-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-items: center;
+    font-size: 2rem;
+    color: rgb(35, 49, 5);
+    gap: 2rem;
+}
+
+/* .stopwatch_btn-sec{
+    display: grid;
+    grid-auto-flow: column;
+} */
+
+.stopwatch_head{
+    margin: 0;
+}
+
+.stopwatch_text{
+    border: 2px dashed rgb(61, 87, 10);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+.stopwatch_btn{
+    padding: 1rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: rgb(191, 226, 119);
+    font-size: 1.2rem;
+    color: rgb(61, 87, 10);
+    border: 2px solid rgb(61, 87, 10);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.stopwatch_btn:hover{
+    background-color: rgb(61, 87, 10);
+    color: rgb(231, 252, 191);
+
+}

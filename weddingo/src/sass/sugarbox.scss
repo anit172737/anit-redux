@@ -1,0 +1,42 @@
+@import './base';
+
+.sugarbox{
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/-2;
+    background-color: $color-primary-light;
+    padding: 5rem 4rem;
+
+    &__title{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: $color-primary-light1;
+        padding-bottom: 5rem;
+
+        &-sec{
+            padding: 1rem;
+            background-color: $color-primary-dark-opacity;
+            border-radius: 1.8rem;
+        }
+
+        &-name{
+            padding: 2rem 4rem;
+            background-color: $color-primary-dark-opacity;
+            border-radius: 1rem;
+            font-family: body;
+            font-size: 3.5rem;
+            box-sizing: content-box;
+            //border: 1px dashed $color-primary-dark;
+        }
+    }
+
+    &__gallery{
+        display: grid;
+        justify-content: center;
+        padding: 1.5rem;
+        padding-left: .6rem;
+        border-radius: 1rem;
+        background-color: $color-primary-light1;
+    }
+}

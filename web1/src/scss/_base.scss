@@ -1,0 +1,65 @@
+$color-primary: #282c34;
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/Lato/Lato-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    width:10px;
+    
+    &:hover{
+        width:15px;
+    }
+}
+
+::-webkit-scrollbar-track{
+    
+    background: rgba(15, 75, 4, 0.5);
+    border-radius: 0px 7px 7px 0px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(87, 95, 73);
+    border-radius: 5px;
+
+    &:hover{
+        background: rgb(159, 170, 141);
+        width:15px;
+    }
+}
+
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: myFont;
+    background-color: $color-primary;
+    font-weight: 300;
+    color: white;
+    height: 100vh;
+}
+
+h2{
+    text-align:center;
+    padding:1rem; 
+    text-transform:uppercase;
+    font-size:2.5rem
+}
+
+.sec{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    height: 100vh;
+
+}

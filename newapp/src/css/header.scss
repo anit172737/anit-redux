@@ -1,0 +1,77 @@
+@import './base.scss';
+
+.header{
+    display: grid;
+    grid-column: sidebar-end/col-end 6;
+    grid-row: header-start/header-end;
+    padding: 3rem 15rem;
+    justify-content: center;
+    color:white;
+    background-image: linear-gradient(to right, $color-secondary, $color-secondary), 
+    url('../img/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg');
+    background-size: cover;
+
+    &__head{
+        font-size: 4rem;
+        color: $color-primary;
+        justify-self: center;
+    }
+
+    &__center{
+        display: grid;
+        justify-self: left;
+    }
+    &__para{
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+    
+    &__button{
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        border-radius: 4rem;
+        outline: none;
+        border: none;
+        background-color: $color-primary;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        line-height: 5.5rem;
+        position: relative;
+
+        &:hover{
+            color: white;
+            background-color: $color-primary-dark;
+        }
+    }
+
+    &__footer{
+        display: grid;
+        width: 100%;
+
+        &--cap{
+            align-self: center;
+        }
+    }
+
+    &__sponsors{
+        padding-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        border-top: 2px dashed $color-primary;
+    }
+}
+
+
+
+@media screen and (max-width : 600px){
+   .header{background-color: white;} 
+}
+
+

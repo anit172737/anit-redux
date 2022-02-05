@@ -1,0 +1,29 @@
+@import '_base.scss';
+
+.footer{
+    grid-column: full-start/full-end;
+    grid-row: box-start 3/ box-end 3;
+    background-color: rgb(8, 8, 46);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 9rem 5rem;
+
+    &__elements{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(104, 104, 255);
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(22, 22, 71);
+        text-transform: uppercase;
+        transition: all .3s;
+
+        &:hover{
+            transform: translateY(-2rem) scale(1.2);
+
+        }
+    }
+}

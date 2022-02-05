@@ -1,0 +1,55 @@
+.table{
+    display: grid;
+    grid-column: 1/-1;
+    align-content: center;
+    background-color: rgba(153, 205, 50, 0.2);
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+
+    &__section{
+        background-color:black; 
+        display:grid; 
+        align-content:center;
+        padding:2rem;
+    }
+
+    &__body{
+        overflow-y:auto; 
+        height:600px;
+        position:relative;
+        border-radius: 10px;
+    }
+
+    &__header{
+    background-color: yellowgreen;
+    color: rgb(7, 63, 7);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+
+    }
+
+
+}
+
+table, td, th{
+    border-collapse:collapse;
+    font-size:2rem;
+}
+
+th, td{
+    padding:1.5rem;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background-color: rgba(67, 87, 28, 0.336);
+    margin: 20px 0px 20px 0px;
+    
+}
+
+
+

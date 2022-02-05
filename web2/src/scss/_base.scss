@@ -1,0 +1,54 @@
+$color-primary:rgb(224, 28, 83);
+$color-primary-light : rgb(122, 13, 44);
+$color-secondary:#2c2b2c;
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: logo;
+    src: url(../font/Open_Sans/BerkshireSwash-Regular.ttf);
+}
+
+*,
+*::before,
+*::after{
+    padding:0;
+    margin:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-weight: 300;
+    font-family: myFont;
+    background-color: $color-primary;
+    color:$color-primary;
+}
+
+.body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 6rem 0px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.container{
+    height: 60rem;
+    width: 110rem;
+    display: grid;
+    background-color: white;
+    box-shadow: 1px 1px 30px black;
+    grid-template-columns:[full-start] 22rem repeat(4, [col-start]  1fr [col-end]) [full-end];
+    grid-template-rows: [header-start] 7rem [header-end gallery-start] 15rem [gallery-end center-start] 30rem [center-end] 1fr [grid-end];
+}
+

@@ -1,0 +1,69 @@
+$color-primary:#e01c53;
+$color-primary-opacity:#f192ad8c;
+$color-primary-dark : #3a0715;
+$color-primary-dark-opacity : #3a071588;
+$color-primary-light:#f192ad;
+$color-primary-light1:#f7ebef;
+$color-secondary:#2c2b2c;
+
+$gray: gray;
+$gray-light: rgb(212, 212, 212);
+$gray-dark: rgb(61, 61, 61);
+
+@font-face {
+    font-family: love;
+    src: url(../font/BerkshireSwash-Regular.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(../font/Niconne-Regular.ttf);
+}
+
+*,
+::after,
+::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::-webkit-scrollbar{
+    width: 1.7rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $color-primary-light;
+    border-radius: 1rem;
+
+    &:hover{
+        background-color: $color-primary;
+    }
+}
+
+::-webkit-scrollbar-track{
+    background-color: $color-primary-opacity;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: love;
+    color:$color-primary;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.App{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100vh repeat(4, min-content);
+    background-color: $color-primary-light;
+}

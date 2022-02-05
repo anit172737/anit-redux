@@ -1,0 +1,47 @@
+@import './base';
+
+.review{
+    display: grid;
+    grid-column: col-start 4/col-end 4;
+    grid-row: center-start/center-end;
+    background-color: #ececec;
+    justify-content:center;
+    align-content: center;
+    padding: 2rem;
+
+    &__sec{
+        background-color: white;
+        padding: 2rem;
+        box-shadow: 3px 3px 20px rgb(99, 98, 98);
+        border-radius: 3px;
+        z-index: 1;
+    }
+
+    &__svg{
+        height: 3rem;
+        width: 3rem;
+        fill: rgb(156, 154, 154);
+        z-index: 10;
+        margin-bottom: -2rem;
+        margin-left: -1rem;
+    }
+    &__para{
+        font-size: 1.3rem;
+        text-align: justify;
+        color: rgb(107, 106, 106);
+    }
+
+    &__detail{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    &__img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+}

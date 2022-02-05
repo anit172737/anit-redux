@@ -1,0 +1,85 @@
+.App{
+    display: grid;
+    justify-content: center;
+    align-content: center ;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, rgb(0, 17, 255), rgb(255, 0, 221));
+    color: white;
+
+    &__sec{
+        padding: 2rem;
+        border-radius: 10px;
+        background-color: rgb(4, 4, 75);
+    }
+
+    &__category{
+        padding: .5rem;
+        border-radius: .5rem;
+        border: 2px solid rgb(238, 255, 0);
+    }
+
+    &__list{
+        padding: .8rem;
+        padding-left: 0;
+    }
+
+    &__table{
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+
+        &--head{
+            width: 135%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 1rem;
+
+            &-1{
+                display: grid;
+                grid-column: 1/4;
+                justify-self: start;
+            }
+
+            &-2{
+                display: grid;
+                grid-column: 4/-1;
+                justify-self: start;
+            }
+        }
+    }
+
+    
+}
+
+.searchbar{
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(54, 54, 54);
+    outline: none;
+    width: 18rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &::placeholder{
+        color:rgb(54, 54, 54);
+
+        
+    }
+
+    &__check{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        height: 1rem;
+        width: 1rem;
+        color: rgb(160, 233, 16);
+    }
+
+    &__form{
+        padding-bottom: 1rem;
+    }
+}

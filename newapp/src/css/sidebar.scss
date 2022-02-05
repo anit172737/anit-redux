@@ -1,0 +1,45 @@
+@import '_base.scss';
+
+
+
+.sidebar{
+    display: grid;
+    grid-row: header-start/grid-end;
+    grid-column: sidebar-start/ sidebar-end;
+    background-color: $color-primary-dark;
+    color:white;
+    justify-content: center;
+    padding-top: 4rem;
+
+    &__item{
+        background-color: white;
+        height: 3px;
+        width: 4rem;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &::before,
+        &::after{
+            content: '';
+            background-color: white;
+            height: 3px;
+            width: 4rem;
+            display: block;
+            border-radius: 4px;
+        }
+
+        &::before{
+            transform: translateY(-1.1rem);
+        }
+
+        &::after{
+            transform: translateY(.8rem);
+        }
+
+    }
+
+    &__item:hover::before{
+        transform: rotateZ(45%);
+    }
+}
+

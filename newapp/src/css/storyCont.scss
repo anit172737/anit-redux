@@ -1,0 +1,47 @@
+@import '_base.scss';
+
+.storyCont{
+    display: grid;
+    gap: 6rem;
+    grid-template-rows: 2fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-column: col-start 5/ full-end;
+    grid-row: story-start/ story-end;
+    background-color: $color-primary;
+    padding: 10rem;
+
+    &__head{
+        font-size: 3rem;   
+        text-transform: capitalize;
+        text-align: justify;
+    }
+
+    &__name{
+        float: right;
+        text-decoration: underline;
+    }
+    &__button{
+        position: relative;
+        display: grid;
+        height: 5rem;
+        background-color: $color-grey-dark-1;
+        color: $color-primary;
+        border: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: $font-primary;
+        align-items:end;
+        cursor: pointer;
+
+        &::after{
+            content: 'ani';
+            background-color: blanchedalmond;
+        }
+
+        
+    }
+}

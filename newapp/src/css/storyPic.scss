@@ -1,0 +1,27 @@
+.storyPic{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column: full-start/col-end 4;
+    grid-row: story-start/story-end;
+    background-color: turquoise;
+
+    &__image--1{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+
+    &__image--2{
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-column: 5/-1;
+        grid-row: 6/span 3;
+        z-index: 10;
+        margin-left: 5rem;
+        box-shadow: 10px 10px 30px black;
+    }
+}

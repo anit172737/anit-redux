@@ -1,0 +1,91 @@
+@import './base';
+
+.story{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    grid-template-rows: 10rem 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: $color-primary-light1;
+    padding: 5rem 0rem;
+
+    &__title{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: $color-primary-dark;
+
+        &-sec{
+            padding: 1rem;
+            background-color: $color-primary-opacity;
+            border-radius: 1.8rem;
+        }
+
+        &-name{
+            padding: 2rem 4rem;
+            background-color: $color-primary-opacity;
+            border-radius: 1rem;
+            font-family: body;
+            font-size: 3.5rem;
+            box-sizing: content-box;
+            //border: 1px dashed $color-primary-dark;
+        }
+    }
+
+    &__groom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 4rem 25rem;
+
+        &-para{
+            text-indent: 4rem;
+        }
+
+        &-quo{
+            font-size: 11rem;
+            color:$gray-light;
+            margin-bottom: -8rem;
+            margin-top: -6rem;
+            margin-left: -4rem;
+        }
+
+        &-detail{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            text-align: justify;
+            background-color: white;
+            padding: 3rem;
+            border-radius: 5rem;
+            box-shadow: .5rem .5rem 1rem $color-primary;
+
+            &-1{
+                border-bottom-right-radius: 2px;
+            }
+
+            &-2{
+                border-bottom-left-radius: 2px;
+            }
+        }
+
+        &-img{
+            display: grid;
+            justify-self: end;
+            height: 30rem;
+            width: auto;
+            border:1rem solid $color-primary-light;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+    }
+
+    &__brideImg{
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        justify-self: start;
+    }
+}

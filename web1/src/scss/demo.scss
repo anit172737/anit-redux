@@ -1,0 +1,36 @@
+@import '_base.scss';
+
+.but{
+    position: relative;
+    padding: 3rem 10rem;
+    background-color: yellow;
+    color: rgb(167, 166, 166);
+    font-family: myFont;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6rem;
+    z-index: 10;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        line-height: 8rem;
+        height: 100%;
+        width: 0px;
+        background-color: orangered;
+        transform: scale(0);
+        transition: transform .2s, width .5s .2s;
+        color: white;
+        border-radius: 6rem;
+        z-index: -1;
+        
+    }
+
+    &:hover::after{
+        transform: scale(1);
+        width: 100%;
+    }
+}
